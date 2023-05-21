@@ -1,0 +1,20 @@
+.articls {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 17vw 17vw;
+    margin-bottom: 25px;
+    
+}
+
+.art1 {
+    
+   
+    border: 2px solid #000000;
+}
+
+.art {
+    font-size: 28px;
+    line-height: 33px;
+    border: 2px solid #000000;
+}

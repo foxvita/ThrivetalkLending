@@ -1,0 +1,31 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');*/
+
+
+
+
+@import "null";
+@import "src/fontsize";
+@import "src/introduce";
+@import "src/about";
+@import "src/helping";
+@import "src/greeting";
+@import "src/health";
+@import "src/articls";
+@import "src/add";
+@import "src/footer";
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+
+}
+
+
+
+
+.content {
+    min-height: 100vh;
+}

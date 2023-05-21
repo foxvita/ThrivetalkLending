@@ -1,0 +1,17 @@
+.health {
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    grid-template-rows: 33.33vw 33.33vw;
+    margin-bottom: 25px;
+}
+
+.box {
+    background-color: #5e5373;
+    border: 1px dashed #ece89d;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}

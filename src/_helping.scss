@@ -1,0 +1,47 @@
+
+.helping {
+    width: 100%;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax 200px, 1fr);
+    grid-template-rows:10vw 25vw;
+    grid-template-areas: 
+    "title title title title"
+    "chapter1 chapter2 chapter3 chapter4";
+}
+
+.helping__title {
+text-align: center;
+padding-top: 7vw;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(34, 53, 111, 0.5);
+    grid-area: title;
+}
+
+
+
+.chapter {}
+
+.helping__chapter1 {
+    grid-area:chapter1;
+    background-color: #FFE2DE;
+}
+
+.helping__chapter2 {
+    grid-area:chapter2;
+    background-color: #C4E769;
+}
+
+.helping__chapter3 {
+    grid-area:chapter3;
+    background-color: #62D0DF;
+}
+
+.helping__chapter4 {
+    grid-area:chapter4;
+    background-color: #0052C1;
+}

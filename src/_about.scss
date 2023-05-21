@@ -1,0 +1,18 @@
+
+
+
+/*-------------------------------*/
+.about {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows:42vw;
+    .about__title {
+    }
+    .about__text {
+        grid-column-start: 2;
+    }
+}
+
+
+
+/*------------------------------*/

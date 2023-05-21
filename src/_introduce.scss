@@ -1,0 +1,28 @@
+
+/*@mixin fontz($fmin, $fmax) {
+    font-size: calc((100vw - 480px) / (1280 - 480) * ($fmax - $fmin) + $fmin); 
+}*/
+.introduce {
+    display: grid;
+    grid-template-columns:1fr 36vw;
+    grid-template-rows:42vw;
+}
+.introduce__body {
+
+   
+    .introduce__text {
+    }
+}
+.introduce__title {
+   
+    @include fontz(12px, 40px);
+}
+.introduce__foto {
+    grid-column-start: 2;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

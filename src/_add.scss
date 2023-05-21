@@ -1,0 +1,31 @@
+.add {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 66vw 66vw;
+    grid-template-areas: "foto1 body1 body1"
+    "body2 body2 foto2";
+}
+.add__foto1 {
+grid-area: foto1;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+.add__body1{
+grid-area: body1;
+
+}
+.add__body2{
+grid-area: body2;
+}
+.add__foto2{
+grid-area: foto2;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+} 
