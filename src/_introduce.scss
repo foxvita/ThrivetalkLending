@@ -1,7 +1,8 @@
 
 /*@mixin fontz($fmin, $fmax) {
-    font-size: calc((100vw - 480px) / (1280 - 480) * ($fmax - $fmin) + $fmin); 
+    font-size: calc((100vw - 480px) / (1440 - 480) * ($fmax - $fmin) + $fmin); 
 }*/
+
 .introduce {
     display: grid;
     grid-template-columns:1fr 36vw;
@@ -9,13 +10,14 @@
 }
 .introduce__body {
 
-   
-    .introduce__text {
     }
-}
+    .introduce__text {
+        font-size: 28px; /*calc ((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px); */
+    }
+
 .introduce__title {
    
-    @include fontz(12px, 40px);
+   /* @include fontz(16px, 40px);*/
 }
 .introduce__foto {
     grid-column-start: 2;

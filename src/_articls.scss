@@ -14,7 +14,8 @@
 }
 
 .art {
-    font-size: 28px;
+    font-size: calc((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px);
     line-height: 33px;
     border: 2px solid #000000;
+   
 }

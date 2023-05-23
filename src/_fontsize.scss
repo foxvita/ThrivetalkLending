@@ -1,4 +1,0 @@
-
-@mixin fontz($fmin, $fmax) {
-    font-size:calc ((100vw - 480px) / (1280 - 480) * ($fmax - $fmin) + $fmin); 
-}
