@@ -31,11 +31,11 @@ html, body {
 }
 
 .introduce__text {
-  font-size: 28px; /*calc ((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px); */
+  font-size: calc((100vw - 480px) / 960 * 16 + 12px);
 }
 
 .introduce__title {
-  /* @include fontz(16px, 40px);*/
+  font-size: calc((100vw - 480px) / 960 * 24 + 16px);
 }
 
 .introduce__foto {
@@ -53,8 +53,12 @@ html, body {
   grid-template-columns: 30vw 1fr;
   grid-template-rows: 42vw;
 }
+.about .about__title {
+  font-size: calc((100vw - 480px) / 960 * 24 + 16px);
+}
 .about .about__text {
   grid-column-start: 2;
+  font-size: calc((100vw - 480px) / 960 * 16 + 12px);
 }
 
 .helping {
@@ -130,8 +134,9 @@ html, body {
 
 .art {
   font-size: calc((100vw - 480px) / 960 * 16 + 12px);
+  /* font-size: calc((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px);*/
   line-height: 33px;
-  border: 2px solid #000000;
+  border: 2px solid #b5284e;
 }
 
 .add {

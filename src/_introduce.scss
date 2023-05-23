@@ -12,12 +12,13 @@
 
     }
     .introduce__text {
-        font-size: 28px; /*calc ((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px); */
+       
+        @include fontz(12, 28);
     }
 
 .introduce__title {
    
-   /* @include fontz(16px, 40px);*/
+    @include fontz(16, 40);
 }
 .introduce__foto {
     grid-column-start: 2;

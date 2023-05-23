@@ -7,9 +7,11 @@
     grid-template-columns: 30vw 1fr;
     grid-template-rows:42vw;
     .about__title {
+        @include fontz(16, 40);
     }
     .about__text {
         grid-column-start: 2;
+        @include fontz(12, 28);
     }
 }
 
