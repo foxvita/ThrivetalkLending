@@ -8,10 +8,36 @@
 }
 
 .box {
-    background-color: #5e5373;
+    
     border: 1px dashed #ece89d;
     padding: 10px;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+
+    .health__box {
+        &>div {
+            height: 6.7vw;
+        }
+    }
+}
+.health__box1 {
+    background-color:#22356F;
+}
+
+.health__box2 {
+    background-color:#0052C1;
+}
+.health__box3 {
+    background: center / contain no-repeat url("../img/healthe/strobary.jpg"),#8ad0d3 ;
+}
+.health__box4 {
+    background-color:#62D0DF;
+}
+.health__box5 {
+    
+    background: #DEE1FF;
+}
+.health__box6 {
+    background: #8F00FF;
 }

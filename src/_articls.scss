@@ -1,27 +1,48 @@
-
 @mixin fontz($fmin, $fmax) {
-    font-size: calc((100vw - 480px) / (1440 - 480) * ($fmax - $fmin) + 1px * $fmin); 
+    font-size: calc((100vw - 480px) / (1440 - 480) * ($fmax - $fmin) + 1px * $fmin);
 }
 
 .articls {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 17vw 17vw;
+   /* grid-template-rows: 17vw 17vw;*/
     margin-bottom: 25px;
-    
+
 }
 
-.art1 {
-    
+.art_1 {
+    background-color: #36b528;
    
-    border: 2px solid #000000;
 }
 
 .art {
     @include fontz(12, 28);
-   /* font-size: calc((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px);*/
+    /* font-size: calc((100vw - 480px) / (1440 - 480) * (28 - 12) + 12px);*/
     line-height: 33px;
     border: 2px solid #b5284e;
+    padding: 55px 77px 37px 105px;
+overflow: hidden;
+
+
+}
+
+
+
+.art__title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+
+    color: #22356F;
+    margin-bottom:28px;
+}
+
+.art__text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    color: rgba(34, 53, 111, 0.5);
    
 }

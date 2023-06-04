@@ -1,0 +1,12 @@
+.button {
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    color: #F9B640;
+    background-color:transparent;
+    padding: 10px;
+}
+.button:hover {
+    background-color: #F9B640;
+    color: #ffffff;
+}

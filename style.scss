@@ -5,6 +5,8 @@
 
 @import "null";
 @import "src/fontsize";
+@import "src/button";
+@import "src/chapter";
 @import "src/greeting";
 @import "src/introduce";
 @import "src/about";
@@ -21,10 +23,9 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
-
+    width: 100%;
+    
 }
-
-
 
 
 .content {

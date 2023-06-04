@@ -21,27 +21,50 @@ padding-top: 7vw;
     color: rgba(34, 53, 111, 0.5);
     grid-area: title;
 }
-
-
-
-.chapter {}
-
-.helping__chapter1 {
+.cell1 {
     grid-area:chapter1;
+}
+.cell2 {
+    grid-area:chapter2;
+}
+.cell3 {
+    grid-area:chapter3;
+}
+.cell4 {
+    grid-area:chapter4;
+}
+.helping__chapter{
+    padding-top: 1px;
+}
+.helping__chapter1 {
+    width: 100%;
+    height:100%;
     background-color: #FFE2DE;
+    
+
+   
 }
 
 .helping__chapter2 {
-    grid-area:chapter2;
+    width: 100%;
+    height:100%;
     background-color: #C4E769;
+
+    
 }
 
 .helping__chapter3 {
-    grid-area:chapter3;
+    width: 100%;
+    height:100%;
     background-color: #62D0DF;
+
+    
 }
 
 .helping__chapter4 {
-    grid-area:chapter4;
+    width: 100%;
+    height:100%;
     background-color: #0052C1;
+
+    
 }

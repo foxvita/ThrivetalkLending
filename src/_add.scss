@@ -1,31 +1,105 @@
 .add {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 66vw 66vw;
+    grid-template-columns: repeat(3, 1fr);
+   /* grid-template-rows: 66vw 66vw;*/
     grid-template-areas: "foto1 body1 body1"
-    "body2 body2 foto2";
+        "body2 body2 foto2";
 }
+
 .add__foto1 {
-grid-area: foto1;
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    grid-area: foto1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
-}
-.add__body1{
-grid-area: body1;
+
+.add__body1 {
+    grid-area: body1;
+    padding-top: 103px;
+    padding-left: 106px;
+    padding-bottom: 42px;
+    padding-right: 175px;
 
 }
-.add__body2{
-grid-area: body2;
+
+
+
+.add__body2 {
+    grid-area: body2;
+    background: #22356F;
+    padding-top: 103px;
+    padding-right: 201px;
+    padding-bottom: 60px;
+    padding-left: 180px;
 }
-.add__foto2{
-grid-area: foto2;
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.add__foto2 {
+    grid-area: foto2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
-} 
+
+.add__preamble {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+
+
+}
+
+.add__preamble_1 {
+    color: #22356F;
+}
+
+.add__preamble_2 {
+    color: #fff;
+    margin-bottom: 230px;
+}
+
+.add__title {
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+
+.add__text {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+}
+
+.add__text_1 {
+    color: #22356F;
+}
+
+.add__text_2 {
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.add__getting {
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    
+}
+.add__getting_1{
+    color: #FAB63E;
+}
+.add__getting_2{
+    color: #62D0DF;
+}
