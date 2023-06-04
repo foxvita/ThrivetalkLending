@@ -24,7 +24,13 @@ body a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
   height: 50px;
   color: #F9B640;
   background-color: transparent;
@@ -586,6 +592,9 @@ li a {
   padding-bottom: 60px;
   padding-left: 180px;
 }
+.add__body2 a:hover > div {
+  color: #FAB63E;
+}
 
 .add__foto2 {
   grid-area: foto2;
@@ -605,6 +614,7 @@ li a {
 
 .add__preamble_1 {
   color: #22356F;
+  margin-bottom: 225px;
 }
 
 .add__preamble_2 {
@@ -628,6 +638,13 @@ li a {
 
 .add__text_1 {
   color: #22356F;
+  margin-bottom: 152px;
+}
+.add__text_1 a {
+  color: #6CD3E1;
+}
+.add__text_1 a:hover {
+  color: #FAB63E;
 }
 
 .add__text_2 {
@@ -638,12 +655,6 @@ li a {
 .add__getting {
   font-size: 16px;
   line-height: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   letter-spacing: 0.1em;
 }
 
@@ -652,6 +663,9 @@ li a {
 }
 
 .add__getting_2 {
+  /*color: #62D0DF;*/
+}
+.add__getting_2 .button {
   color: #62D0DF;
 }
 
