@@ -41,3 +41,22 @@
 .health__box6 {
     background: #8F00FF;
 }
+/*---------------------------------------------------------------------------------------*/
+@media (max-width:991.98px) {
+   
+}
+
+@media (max-width:767.98px){
+    .health {
+        
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 50vw 50vw 50vw;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:479.98px) {
+    .health { grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 100vw);
+    margin-bottom: 25px;
+    }
+}

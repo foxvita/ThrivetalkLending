@@ -1,9 +1,9 @@
 .greeting {
     /* width: 100%;*/
     display: flex;
-    /*justify-content: stretch;*/
+
     min-height: 100vh;
-    border: 1px solid black;
+
 
     position: relative;
     overflow: hidden;
@@ -11,7 +11,9 @@
 }
 
 .greeting__body {
-    width: 80%;
+    padding: 1px;
+    /* width: 80%;*/
+    flex: 0 0 80%;
     /* height: 100%;*/
     background-color: #F4F9E2;
 
@@ -22,7 +24,7 @@
     width: 100%;
     /* height: 8.3vw;*/
     height: 90px;
-    border: 2px solid rgb(82, 52, 229);
+
     background-color: transparent;
     position: absolute;
     z-index: 1;
@@ -58,9 +60,7 @@
 
 }
 
-/*   @media (max-width:991.98px) {
-    
-}     */
+
 
 .logo {
     font-size: 24px;
@@ -98,8 +98,8 @@ li {
 /*-----------------------------------------------*/
 .greeting__info {
     width: 34vw;
-    margin-top:305px;
-    margin-left: 179px;
+    margin-top: 21vw;
+    margin-left: 12vw;
     /* position: absolute;
     top: 17vw;
     left: 12.5vw;*/
@@ -131,6 +131,15 @@ li {
 
 .greeting__buttons {
     margin-bottom: 5.2vw;
+    display: flex;
+}
+
+.greet__butt1 {
+    flex: 0 1 200px;
+}
+
+.greet__butt2 {
+    flex: 0 1 200px;
 }
 
 /*-------------------------------------------------*/
@@ -180,18 +189,96 @@ li {
         transform: scale(130%) rotate(-60deg) translateY(40px) translateX(-25%);
     }
 }
-.icon-burger{
-    display: none;
-   
 
-}  
+/*----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:991.98px) {
+    .greeting {
 
-/*   @media (max-width:991.98px) {
-    
-}     */
+        display: block;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .greeting__body {
+
+        width: 100%;
+
+        /* height: 100%;*/
+        background-color:
+            #F4F9E2;
 
 
-/*-----------------Рисование бургера----------------------*/
+    }
+
+    .greeting__header {
+        width: 100%;
+
+        height: 90px;
+
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-left: 12.5vw;
+        padding-right: 7vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .greeting__info {
+        width: 68vw;
+        margin-top: 21vw;
+        margin-left: 12vw;
+        /* position: absolute;
+    top: 17vw;
+    left: 12.5vw;*/
+
+    }
+
+    .greeting__graf {
+
+        display: block;
+        position: static;
+        width: 100vw;
+        height: 120vw;
+        transform: rotate(0deg);
+
+
+        &::after {
+            display: none;
+
+        }
+
+
+        .oval {
+
+            width: 100%;
+            height: 100%;
+
+            border-radius: 0%;
+
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            transform: rotate(-90deg);
+            /* object-position: -150% 70%;*/
+            object-fit: contain;
+            /*  transform: scale(130%) rotate(-60deg) translateY(40px) translateX(-25%);*/
+            transform: translateY(0px) translateX(0%);
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------Рисование бургера---------------------------------------*/
 @media (max-width:767.98px) {
 
     .icon-burger {
@@ -230,7 +317,10 @@ li {
     }
 
     .greeting__menu {
-        order: 3;
+       /*display: none;
+        order: 3;*/
+        position: absolute;
+        left: 120%;
     }
 
     .butheader {
@@ -240,29 +330,25 @@ li {
     .icon-burger {
         order: 4;
     }
+    .icon-burger:hover
 
-    /*--------------------
-    .menu__box {
-        position:fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        left: 0;
-        top: 0;
-    }----------------*/
-    /* .menu__body {
-        width: 100%;
-        display: flex;
+    .menu__body {
+           align-items: center;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        justify-content: space-between;
+        gap: 0;
+        padding: 10px;
         position: absolute;
         top: 0;
-        
-       
-        
-    }*/
+        right: 0;
+        width: 100vw;
+        background-color: antiquewhite;
 
+    }
+    .menu__list {
+        padding-top: 10px;
+        font-size: 22px;
+    }
 }
 
-/*--------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
