@@ -14,6 +14,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
     }
 }
 
@@ -52,11 +53,13 @@
 
 .add__foto2 {
     grid-area: foto2;
+   
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+
     }
 }
 
@@ -134,10 +137,51 @@
     .add {
         width: 100%;
         display:block 
-     /*   grid-template-columns: 1fr;
-       /* grid-template-rows: 66vw 66vw;
-        grid-template-areas: "foto1" "body1" 
-             "foto2" "body2";*/
+    
+    }
+    .add__body1 {
+        
+        padding-top: 4em;
+        padding-left: 40px;
+        padding-bottom: 2.6em;
+        padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     }
     
-}   
+    
+    
+    .add__body2 {
+       
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px; 
+        justify-content: center;
+    align-items: center;
+    text-align: center;
+}  
+.add__foto1 {
+    width: 100vw;
+    height: 70vw;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+.add__foto2 {
+    width: 100vw;
+    height: 80vw;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+}

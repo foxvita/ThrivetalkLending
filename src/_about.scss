@@ -7,7 +7,7 @@
     align-items: first baseline;
     color: #22356F;
     overflow: auto;                 /*----------------??-----------*/
-
+   
     .about__title {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -28,4 +28,10 @@
 
 
     }
+}
+@media (max-width:991.98px) {
+    .about {
+        margin-bottom: 10px;
+    }   
+    
 }

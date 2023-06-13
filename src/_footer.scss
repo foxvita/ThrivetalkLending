@@ -50,7 +50,7 @@
     letter-spacing: -0.006em;
 
     color: #22356F;
-    margin-bottom: 65px;
+    margin-bottom: 2em;
 }
 
 .footer__text {
@@ -101,11 +101,14 @@
         grid-column: 1 / span 1;
 
     }
+    
+
 
     .footer__title {
-        /*font-size: 14px;*/
-        margin-bottom: 65px;
+      /*------------------Шрифты наследуются тут---------------------*/
+        margin-bottom: 30px;
     }
+    
 }
 
 @media (max-width:659.98px) {
@@ -117,5 +120,12 @@
     .footer__legals {
 
         padding-left: 70px;
+    }
+    .footer__title {
+        /*font-size: 14px;*/
+        margin-bottom: 15px;
+    }
+    .footer__text {
+        margin-bottom: 20px;
     }
 }

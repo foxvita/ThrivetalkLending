@@ -320,17 +320,20 @@ li {
        /*display: none;
         order: 3;*/
         position: absolute;
-        left: 120%;
+        left: 100%;
+        transition: left 0.3s ease 0s;
     }
 
     .butheader {
-        order: 2;
+       /* order: 2;*/
     }
 
     .icon-burger {
-        order: 4;
+      /*  order: 4;*/
     }
-    .icon-burger:hover
+    .icon-burger:hover ~ nav {
+        left:0;
+    }
 
     .menu__body {
            align-items: center;
@@ -339,10 +342,11 @@ li {
         gap: 0;
         padding: 10px;
         position: absolute;
-        top: 0;
+        top: 30px;
         right: 0;
         width: 100vw;
         background-color: antiquewhite;
+       /* overflow: auto;*/
 
     }
     .menu__list {

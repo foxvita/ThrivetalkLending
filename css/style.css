@@ -51,31 +51,15 @@ body a {
   display: flex;
   width: 72%;
   position: relative;
-  /*height: 60%;*/
-  /* background-color: blueviolet;*/
   font-size: calc((100vw - 480px) / 960 * 16 + 16px);
   line-height: 1.06;
   letter-spacing: -0.006em;
   border-top: 1px solid #fff;
   color: #FFFFFF;
-  /*&>div::before {
-       content: "";
-       display: inline-block;
-       width: 9px;
-       height: 9px;
-       background: #E9B730;
-       border-radius: 50%;
-       margin-right: 0.5em;
-       margin-bottom: 0.06em;
-
-   }*/
 }
 
 .chapter::before {
   content: "";
-  /*position: absolute;
-  top: 0;
-  left: 0;*/
   display: block;
   width: 9px;
   height: 9px;
@@ -390,19 +374,20 @@ li a {
     /*display: none;
      order: 3;*/
     position: absolute;
-    left: 120%;
+    left: 100%;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
   }
   .butheader {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    /* order: 2;*/
   }
   .icon-burger {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    /*  order: 4;*/
   }
-  .icon-burger:hover .menu__body {
+  .icon-burger:hover ~ nav {
+    left: 0;
+  }
+  .menu__body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -416,10 +401,11 @@ li a {
     gap: 0;
     padding: 10px;
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
     width: 100vw;
     background-color: antiquewhite;
+    /* overflow: auto;*/
   }
   .menu__list {
     padding-top: 10px;
@@ -521,6 +507,11 @@ li a {
   letter-spacing: 0.005em;
 }
 
+@media (max-width: 991.98px) {
+  .about {
+    margin-bottom: 10px;
+  }
+}
 .helping {
   width: 100%;
   margin-bottom: 120px;
@@ -542,6 +533,21 @@ li a {
   grid-area: title;
 }
 
+@media (max-width: 991.98px) {
+  .helping__title {
+    padding-top: 1vw;
+  }
+  .helping {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 665.98px) {
+  .helping {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vw 25vw 25vw;
+    grid-template-areas: "title title title title" " chapter1 chapter1 chapter2 chapter2" "chapter3 chapter3 chapter4 chapter4";
+  }
+}
 .cell1 {
   grid-area: chapter1;
 }
@@ -615,7 +621,7 @@ li a {
 }
 
 .health__box3 {
-  background: center/contain no-repeat url("../img/healthe/strobary.jpg"), #8ad0d3;
+  background: center/cover no-repeat url("../img/healthe/strobary.jpg"), #8ad0d3;
 }
 
 .health__box4 {
@@ -641,7 +647,7 @@ li a {
 @media (max-width: 479.98px) {
   .health {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 100vw);
+    grid-template-rows: repeat(6, 50vw);
     margin-bottom: 25px;
   }
 }
@@ -829,6 +835,52 @@ li a {
     width: 100%;
     display: block;
   }
+  .add__body1 {
+    padding-top: 4em;
+    padding-left: 40px;
+    padding-bottom: 2.6em;
+    padding-right: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .add__body2 {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .add__foto1 {
+    width: 100vw;
+    height: 70vw;
+  }
+  .add__foto1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .add__foto2 {
+    width: 100vw;
+    height: 80vw;
+  }
+  .add__foto2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .footer {
   display: grid;
@@ -874,7 +926,7 @@ li a {
   line-height: 1.1;
   letter-spacing: -0.006em;
   color: #22356F;
-  margin-bottom: 65px;
+  margin-bottom: 2em;
 }
 
 .footer__text {
@@ -916,8 +968,8 @@ li a {
     grid-column: 1/span 1;
   }
   .footer__title {
-    /*font-size: 14px;*/
-    margin-bottom: 65px;
+    /*------------------Шрифты наследуются тут---------------------*/
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 659.98px) {
@@ -926,6 +978,13 @@ li a {
   }
   .footer__legals {
     padding-left: 70px;
+  }
+  .footer__title {
+    /*font-size: 14px;*/
+    margin-bottom: 15px;
+  }
+  .footer__text {
+    margin-bottom: 20px;
   }
 }
 .wrapper {
