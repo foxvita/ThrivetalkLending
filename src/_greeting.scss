@@ -37,7 +37,7 @@
 
 
     .butheader {
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         border: none;
         border-radius: 50px;
         padding: 10px 25px;
@@ -60,6 +60,9 @@
 
 }
 
+.icon-burger {
+    display: none;
+}
 
 
 .logo {
@@ -68,6 +71,7 @@
     letter-spacing: 1px;
     color: #62D0DF;
 }
+
 
 .greeting__menu {
     flex: 0 1 233px;
@@ -86,6 +90,7 @@
 
 li {
     font-size: 14px;
+    @include fontz(14, 20);
     line-height: 1.5;
     list-style-type: none;
 
@@ -148,7 +153,7 @@ li {
 .greeting__graf {
     width: 37vw;
     height: 56vw;
-    /*border: 2px solid rgb(52, 229, 93);*/
+   
     position: absolute;
 
     right: 0vw;
@@ -158,7 +163,7 @@ li {
 
     &::after {
         content: "";
-        /*display: block;*/
+       
         width: 37vw;
         height: 56vw;
         border-radius: 21vw;
@@ -177,7 +182,7 @@ li {
         width: 100%;
         height: 100%;
         border-radius: 21vw;
-        /*border: 2px solid rgb(229, 52, 176);*/
+        
         overflow: hidden;
     }
 
@@ -203,7 +208,7 @@ li {
 
         width: 100%;
 
-        /* height: 100%;*/
+       
         background-color:
             #F4F9E2;
 
@@ -232,9 +237,7 @@ li {
         width: 68vw;
         margin-top: 21vw;
         margin-left: 12vw;
-        /* position: absolute;
-    top: 17vw;
-    left: 12.5vw;*/
+       
 
     }
 
@@ -243,7 +246,8 @@ li {
         display: block;
         position: static;
         width: 100vw;
-        height: 120vw;
+       /* height: 120vw;*/
+      margin-bottom: 20px;
         transform: rotate(0deg);
 
 
@@ -267,8 +271,8 @@ li {
             display: block;
             width: 100%;
             transform: rotate(-90deg);
-            /* object-position: -150% 70%;*/
-            object-fit: contain;
+            
+            object-fit:contain;
             /*  transform: scale(130%) rotate(-60deg) translateY(40px) translateX(-25%);*/
             transform: translateY(0px) translateX(0%);
         }
@@ -281,6 +285,7 @@ li {
 /*-----------------------------------------------Рисование бургера---------------------------------------*/
 @media (max-width:767.98px) {
 
+   
     .icon-burger {
         display: block;
         flex: 0 0 30px;
@@ -317,11 +322,15 @@ li {
     }
 
     .greeting__menu {
-       /*display: none;
-        order: 3;*/
-        position: absolute;
+       
+        position:absolute;
+              top: 0;       
         left: 100%;
         transition: left 0.3s ease 0s;
+    }
+    .menu__body {
+        position:sticky;
+
     }
 
     .butheader {
@@ -354,5 +363,16 @@ li {
         font-size: 22px;
     }
 }
-
+@media (max-width:479.98px) {
+    .butheader{
+        font-size: 10px;
+        line-height: 0.5;
+        padding: 5px 15px;
+    }  
+}
+@media (max-width:379.98px) {
+    .logo {
+        display: none;
+    }
+}
 /*-----------------------------------------------------------------------------*/
