@@ -334,7 +334,7 @@ li {
     }
 
     .butheader {
-       /* order: 2;*/
+      /*  order: 2;*/
     }
 
     .icon-burger {
@@ -351,7 +351,7 @@ li {
         gap: 0;
         padding: 10px;
         position: absolute;
-        top: 30px;
+        top: 90px;
         right: 0;
         width: 100vw;
         background-color: antiquewhite;
@@ -370,9 +370,18 @@ li {
         padding: 5px 15px;
     }  
 }
-@media (max-width:379.98px) {
+@media (max-width:431.98px) {
     .logo {
         display: none;
+    }
+    .greeting__graf {
+       
+        img {
+           
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 /*-----------------------------------------------------------------------------*/
