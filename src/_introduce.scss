@@ -13,7 +13,7 @@
 
 color: #ffffff;
 margin-left: 12.5vw;
-margin-right: 12.5vw;
+margin-right: 5vw;
 margin-top: 10.4vw;
     }
     .introduce__text {
@@ -21,6 +21,7 @@ margin-top: 10.4vw;
         @include fontz(12, 24);
         line-height: 1.5;
         p {
+            
             font-weight: 900;
         }
         padding-bottom: 5em;
@@ -61,10 +62,17 @@ margin-top: 10.4vw;
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-70%);
+    margin-top: 10px;
+    margin-left: 30px;
+   
 }
       .introduce__foto{
         grid-area: foto;
        
-      }    
+      }   
+      .introduce__text {
+              
+        padding-bottom: 5px;
+    } 
 }

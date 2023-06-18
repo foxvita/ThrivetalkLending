@@ -31,3 +31,17 @@
     margin-top: 10px;
     flex-shrink: 0;
 }
+@media (max-width:767.98px) {
+    .chapter::before {
+        
+        margin-top: 5px;
+        
+    }
+}
+@media (max-width:459.98px) {
+    .chapter::before {
+        
+        margin-top: 2px;
+        
+    }
+}

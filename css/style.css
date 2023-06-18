@@ -71,6 +71,16 @@ body a {
       flex-shrink: 0;
 }
 
+@media (max-width: 767.98px) {
+  .chapter::before {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 459.98px) {
+  .chapter::before {
+    margin-top: 2px;
+  }
+}
 .greeting {
   /* width: 100%;*/
   display: -webkit-box;
@@ -353,8 +363,6 @@ li a {
     height: 18px;
     position: relative;
     z-index: 5;
-    -webkit-transition: all 3s ease 1s;
-    transition: all 3s ease 1s;
   }
   .icon-burger div,
   .icon-burger::before,
@@ -366,6 +374,11 @@ li a {
     height: 2px;
     background-color: #000000;
   }
+  .icon-burger::before,
+  .icon-burger::after {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
   .icon-burger::before {
     display: block;
     top: 0;
@@ -375,21 +388,25 @@ li a {
     bottom: 0;
   }
   .icon-burger div {
-    top: 50%;
+    top: 8px;
   }
   /*---------------------превращение бургера в крестик--------------------------*/
   .icon-burger:hover div {
     width: 0;
   }
   .icon-burger:hover::before {
-    top: 50%;
+    top: 8px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
   }
   .icon-burger:hover::after {
-    bottom: 50%;
+    bottom: 8px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
   }
   /*-----------------------------------------------*/
   .greeting__menu {
@@ -451,6 +468,9 @@ li a {
   }
 }
 @media (max-width: 431.98px) {
+  .greeting {
+    min-height: auto;
+  }
   .logo-header {
     display: none;
   }
@@ -475,7 +495,7 @@ li a {
 .introduce__body {
   color: #ffffff;
   margin-left: 12.5vw;
-  margin-right: 12.5vw;
+  margin-right: 5vw;
   margin-top: 10.4vw;
 }
 
@@ -522,11 +542,16 @@ li a {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-25%, -70%);
+            transform: translate(-25%, -70%);
+    margin-top: 10px;
+    margin-left: 30px;
   }
   .introduce__foto {
     grid-area: foto;
+  }
+  .introduce__text {
+    padding-bottom: 5px;
   }
 }
 .about {
@@ -539,16 +564,15 @@ li a {
       -ms-flex-align: first baseline;
           align-items: first baseline;
   color: #22356F;
-  overflow: auto; /*----------------??-----------*/
 }
-.about .about__title {
+.about__title {
   grid-column: 1/2;
   grid-row: 2/3;
   font-size: calc((100vw - 480px) / 960 * 8 + 16px);
   text-align: center;
   line-height: 1.4;
 }
-.about .about__text {
+.about__text {
   grid-column: 2/3;
   grid-row: 2/3;
   font-size: calc((100vw - 480px) / 960 * 12 + 12px);
@@ -558,7 +582,18 @@ li a {
 
 @media (max-width: 991.98px) {
   .about {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 431.98px) {
+  .about {
+    display: block;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+    font-weight: 700;
   }
 }
 .helping {
@@ -595,6 +630,13 @@ li a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 10vw 25vw 25vw;
     grid-template-areas: "title title title title" " chapter1 chapter1 chapter2 chapter2" "chapter3 chapter3 chapter4 chapter4";
+  }
+}
+@media (max-width: 479.98px) {
+  .helping {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vw 50vw 50vw 50vw 50vw;
+    grid-template-areas: "title " " chapter1" "chapter2" "chapter3" "chapter4";
   }
 }
 .cell1 {

@@ -45,6 +45,20 @@
             "chapter3 chapter3 chapter4 chapter4";
     }
 }
+@media (max-width:479.98px) {
+    .helping { 
+        grid-template-columns:  1fr;
+        grid-template-rows: 10vw 50vw 50vw 50vw 50vw;
+        grid-template-areas:
+            "title "
+            " chapter1" 
+            "chapter2"
+            "chapter3"
+             "chapter4";
+
+       
+    }
+}
 
 
 

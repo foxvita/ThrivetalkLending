@@ -6,9 +6,9 @@
     grid-template-rows: minmax(40px, 1fr) 1fr minmax(40px, 1fr);
     align-items: first baseline;
     color: #22356F;
-    overflow: auto;                 /*----------------??-----------*/
+                   
    
-    .about__title {
+    &__title {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         @include fontz(16, 24);
@@ -17,7 +17,7 @@
         line-height: 1.4;
     }
 
-    .about__text {
+    &__text {
         grid-column: 2/3;
         grid-row: 2/3;
 
@@ -31,7 +31,19 @@
 }
 @media (max-width:991.98px) {
     .about {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }   
     
+}
+@media (max-width:431.98px) {
+    .about {
+        display: block;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .about__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+   
 }
