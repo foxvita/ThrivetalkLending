@@ -348,6 +348,12 @@ li a {
     -webkit-transform: translateY(0px) translateX(0%);
             transform: translateY(0px) translateX(0%);
   }
+  .greeting__graf img {
+    width: 100%;
+    height: 130%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*---------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------Рисование бургера---------------------------------------*/
@@ -459,12 +465,24 @@ li a {
     width: 100%;
     height: 100%;
   }
+  .greeting__graf img {
+    width: 100%;
+    height: 130%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 479.98px) {
   .butheader {
     font-size: 10px;
     line-height: 0.5;
     padding: 5px 15px;
+  }
+  .greeting__graf img {
+    width: 100%;
+    height: 130%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 431.98px) {
@@ -476,7 +494,7 @@ li a {
   }
   .greeting__graf img {
     width: 100%;
-    height: 100%;
+    height: 130%;
     -o-object-fit: cover;
        object-fit: cover;
   }
